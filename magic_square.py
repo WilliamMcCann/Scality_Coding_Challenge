@@ -9,7 +9,7 @@ def magic_square(square):
     square = [[0 for x in range(w)] for y in range(h)]
 
     #add colums
-    for col in range(3)
+    for col in range(3):
         sums.append(sum(row[col] for row in square))
 
     #add rows
@@ -19,15 +19,18 @@ def magic_square(square):
     diag_left_sum = 0
     for i in range(0,3):
         diag_left_sum +=square[i][i]
-    sums.append(diag_sum)
+    sums.append(diag_left_sum)
 
     #add diagonal right
     diag_right_sum = 0
-    for i in range(0,3)
-        diag_right_sum
+    for i in range(0,3):
+        diag_right_sum +=square[i][i]
     sums.append(diag_right_sum)
 
     #if there is more than one value in the list, return False; else return True
     if len(set(sum_list))>1:
-        return False
-    return True
+        print False
+    print True
+
+#testing code
+#print 'test'
